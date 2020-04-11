@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Tu peso en marte un lugar donde pesas menos</title>
+    </head>
+    <body>
+            <h1>Tu peso en otro planeta</h1>
+            <p>En la tierra pesas distinto que en marte o jupiter.</p>
+            
+            <script>
+
+                    var g_tierra = 9.8;
+                    var g_marte = 3.7;
+                    var g_jupiter = 24.8;
+                    var gravedad = 0;
+                    var Planeta = ""; 
+
+                    //declarando Variables
+                    var usuario = prompt("Cual es tu peso?");
+                    var peso = parseFloat(usuario);
+
+                    //importante recordar que siempre que uno pide un dato este lo marca como caracter por eso se utilzia parceInt
+                    var iopcion = parseInt(prompt("Favor de seleccionar el planeta en el que quiere saber su peso \n(opcion 1 = marte , opcion 2 = jupiter)"));
+                    
+                    //ponemos la condicional para validar que sea los numeros que necesitamos y que sea un numero
+                    while(iopcion <= 0 || iopcion >= 3 || isNaN(iopcion))
+                    {
+                        alert("Favor de proporcionar una opcion correcta.");
+                        var iopcion = parseInt(prompt("Favor de seleccionar el planeta en el que quiere saber su peso \n(opcion 1 = marte , opcion 2 = jupiter)"));
+                    }
+                    //validamos la opcion
+                    if(iopcion == 1){
+                        Planeta = "Marte";
+                        gravedad = g_marte;
+                    }
+                    else{
+                        Planeta = "Jupiter";
+                        gravedad = g_jupiter;
+                    }
+
+                    //Ecuacion del codigo
+                    peso_final = (peso * gravedad) / g_tierra;
+                    peso_final = parseInt(peso_final);
+
+                    document.write("Tu peso en " + Planeta + " es <strong>" + peso_final + " kilos </strong>");
+            </script>
+    </body>
+</html>
