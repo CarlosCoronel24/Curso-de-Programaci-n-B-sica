@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="../css/estilos.css">
+            <title>Tu peso en marte un lugar donde pesas menos</title>
+    </head>
+    <body>
+            <section class="hero">
+
+                <h1>Tu peso en otro planeta!!</h1>
+                <h3>En la tierra pesas distinto que en marte o jupiter.</h3>
+
+                <!-- Pedir el Peso -->
+                <p>Ingresa tu peso porfavor!.</p>
+                <input type="number" id="PesoProporcionado">
+                </br>
+
+                <div class="radio">                
+                    <!-- Opcion Jupiter -->
+                    <input type="radio" id="jupiter" name="planeta" value="Jupiter">
+                    <label for="jupiter">jupiter</label></br>
+                    <!-- Opcion Marte -->
+                    <input type="radio" id="marte" name="planeta" value="Marte">
+                    <label for="marte">marte</label></br>
+                </div>
+
+                <input type="button" value="Calcular" id="BotonCalcular">
+
+                <!-- Boton para regresar -->
+                <button class="Enlace" onclick="history.back()">Regresar.</button>
+
+                <p id="Resultado"></p>
+            </section>
+
+
+            <!--El script siempre va al final-->
+            <script type="text/javascript" src="Jupiter.js"></script>
+
+    </body>
+</html>
