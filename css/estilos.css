@@ -1,27 +1,52 @@
 /*agregando fuente al Cuerpo de la pagina*/
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url(../imagenes/20190531_190211.jpg);
+    /*/background-image: url(../imagenes/20190531_190211.jpg);*/
+    background-image: url(https://66.media.tumblr.com/d78b572f4c142804c1f4d0761c055bfe/tumblr_o7x34iNEj71qzomoco1_540.gifv);
     font-size: 40px;
+    background-size: cover;
   }
 
-.enlace {
+.Enlace {
   text-decoration: none; /*Quitar los subrayados*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*color: #1a1a1a; Color de la fuente*/
+  color: whitesmoke;
+  font-size: 40px; /* Asignar Tamaños a las fuentes por pixeles (px)*/
+  line-height: 1.5em; /* Modificar el espacio entre lineas por (1.5 = 150% de separación) */
+  letter-spacing: -.2px; /* Poner separación entre letras*/
+  text-transform: uppercase; /*Cambiar el texto a mayusculas (capitalize - combierte las primeras letras en mayusculas)*/
+  margin: 100px 150px 70px 3px; /*Margen de separacion entre las letras del titulo*/
 }
 
 /*Agregando fuentes a los titulos 1-6*/
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Fjalla One', sans-serif; /* Tipo de fuente */
   font-weight: normal; /* Agregando el grosor del tipo de fuente (peso) */
+  color:#cccc00;
 }
+
 
 h1 { 
   font-size: 40px; /* Asignar Tamaños a las fuentes por pixeles (px)*/
   line-height: 1.5em; /* Modificar el espacio entre lineas por (1.5 = 150% de separación) */
   letter-spacing: -.2px; /* Poner separación entre letras*/
   text-transform: uppercase; /*Cambiar el texto a mayusculas (capitalize - combierte las primeras letras en mayusculas)*/
-  color: #1a1a1a; /*Color de la fuente*/
+  /*color: #1a1a1a; Color de la fuente*/
+  color:#cccc00;
   margin: 100px 150px 70px 3px; /*Margen de separacion entre las letras del titulo*/
+}
+
+p{
+  font-family: 'Fjalla One', sans-serif; /* Tipo de fuente */
+  font-weight: normal; /* Agregando el grosor del tipo de fuente (peso) */
+  color:#d9d9d9;
+}
+
+label{
+  font-family: 'Fjalla One', sans-serif; /* Tipo de fuente */
+  font-weight: normal; /* Agregando el grosor del tipo de fuente (peso) */
+  color:#d9d9d9;
 }
 
 /*Cambiando el color a la fuente strong*/
